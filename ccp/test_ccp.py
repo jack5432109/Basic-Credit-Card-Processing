@@ -87,4 +87,21 @@ def test_print_invalid_user(ccp, name_invalid_card, invalid_card, limit, capsys)
     print(user)
     captured = capsys.readouterr()
     assert captured.out == name_invalid_card + error_value
+
+def test_command_add(ccp, name, valid_card):
+    ccp.process("Add " + name + " " + valid_card + " $1000")
+    assert len(ccp.users) == 1
     
+def test_command_charge(ccp, name, valid_card):
+    ccp.add(name, valid_card, 1000)
+    user = ccp.users[name]
+    old_balance = user.balance
+    ccp.process("Charge " + name + " $1000")
+    assert old_balance != user.balance
+    
+def test_command_credit(ccp, name, valid_card):
+    ccp.add(name, valid_card, 1000)
+    user = ccp.users[name]
+    old_balance = user.balance
+    ccp.process("Credit " + name + " $100")
+    assert old_balance != user.balance
