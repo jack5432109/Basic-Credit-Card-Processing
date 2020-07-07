@@ -31,7 +31,8 @@ Keep it simple!
 
 - [gnu make](https://www.gnu.org/software/make/) >=3.81
 
-* more details at https://github.com/QuicketSolutions/core_api
+* more details at [core_api readme](https://github.com/QuicketSolutions/core_api)
+* [Project Requirements](https://github.com/jack5432109/Basic-Credit-Card-Processing/wiki/Project-Requirements)
 * All input will be valid. For example, you don't need to check for or gracefully handle:
   - Illegal characters
   - Malformed commands
