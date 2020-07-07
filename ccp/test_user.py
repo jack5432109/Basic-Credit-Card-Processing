@@ -25,7 +25,3 @@ def test_invalid_user(capsys, name, invalid_card, limit):
     print(user)
     captured = capsys.readouterr()
     assert captured.out == name + ': error\n' 
-
-# def test_user():
-#     test_valid_user()
-#     test_invalid_user()
