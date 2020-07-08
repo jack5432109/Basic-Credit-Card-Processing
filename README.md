@@ -2,14 +2,15 @@
 
 ---
 
-This program contains a basic credit card provider. It can 
-add new credit card accounts, process charges and credits
-against them, and displays summary information after completion.
+This program contains code for a basic credit card provider. It can add new credit card accounts, process charges and credits against them, and displays a summarry after completion.
 
 
 ## Design decisions
 
-Keep it simple!
+The design decisions I made resemble Facade Design pattern. I created three classes in their individual files: 
+- `main.py`: main class that runs the program, reads input and forwards the command to credit card processor 
+- `user.py`: records User information
+- `credit_card_processor.py`: the Credit Card Processor, that processes the commands and manipulates user information. 
 
 - going to throw any "gotchas" at you or your submission,
 - testing for your ability to suss out edge cases, or
