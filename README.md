@@ -27,13 +27,13 @@ Python helps me focus on the program requirements, by having me deal with lesser
   
 ## Usage
 
-#### Test
+### Test
 ```
 $ pytest
 ```
 To run tests, use the above command in the root directory of this program
 
-#### Build
+### Build
 ```
 pyinstaller --onefile main.py
 ```
