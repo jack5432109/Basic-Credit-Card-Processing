@@ -35,7 +35,7 @@ To run tests, use the above command in the root directory of this program
 
 ### Build
 ```
-pyinstaller --onefile main.py
+$ pyinstaller --onefile main.py
 ```
 This will generate the executable in a subdirectory called `dist`
 
