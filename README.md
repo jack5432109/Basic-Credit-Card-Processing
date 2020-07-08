@@ -31,11 +31,11 @@ Python helps me focus on the program requirements, by having me deal with lesser
 ```
 $ pytest
 ```
-To run tests, use the above command in the root directory of this program
+To run tests, use the above command in the root directory of this program.
 
 ### Build
 ```
 $ pyinstaller --onefile main.py
 ```
-This will generate the executable in a subdirectory called `dist`
+This will generate the executable in a subdirectory called `dist` that can be used with the input files.
 
