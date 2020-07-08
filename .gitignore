@@ -4,3 +4,4 @@ venv
 bccp-temp.ipynb
 .vscode
 .vs
+dist
