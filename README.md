@@ -18,27 +18,24 @@ Python helps me focus on the program requirements, by having me deal with lesser
 
 ## Requirements
 
-- [python](https://www.python.org/) >=3
+- [python](https://www.python.org/) >=3.0
 - [pip](https://pip.pypa.io/en/stable/)
 - [pytest](https://docs.pytest.org/en/stable/)
+  - `pip install pytest`
 - [pyinstaller](https://www.pyinstaller.org/)
-
+  - `pip install pyinstaller`
+  
 ## Usage
 
-- `$ pytest`
-  - runs tests
-- `
+#### Test
+```
+$ pytest
+```
+To run tests, use the above command in the root directory of this program
 
-`pip install pytest`
-`pip install pyinstaller`
-`pyinstaller --onefile main.py`
+#### Build
+```
+pyinstaller --onefile main.py
+```
+This will generate the executable in a subdirectory called `dist`
 
-## Implementing and Packaging Your Solution:
-
-- An overview of your design decisions
-- Why you picked the programming language you used
-- How to run your code and tests, including how to compile it if applicable and
-  how to install any dependencies your code may have.
-
-Do not include precompiled binaries with your code; we will compile and run
-your solution from the source code you provide.
