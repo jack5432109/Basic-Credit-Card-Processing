@@ -1,7 +1,8 @@
 import sys
 from .user import User
 
-class Ccp: 
+
+class Ccp:
     def __init__(self):
         self.users = {}
 
@@ -22,7 +23,7 @@ class Ccp:
         is_luhn_valid = self.is_luhn_valid(cc_number)
         user = User(name, cc_number, limit, is_luhn_valid)
         self.users[name] = user
-    
+
     def charge(self, user, amount):
         new_balance = user.balance + amount
         if user.is_luhn_valid and new_balance <= user.limit:
@@ -36,12 +37,12 @@ class Ccp:
         sorted_users = sorted(self.users)
         for user in sorted_users:
             print(self.users[user])
-    
+
     def process(self, command):
         words = command.split()
         if words[0] == 'Add':
-            self.add(words[1], int(words[2]), int(words[3].replace('$','')))
+            self.add(words[1], int(words[2]), int(words[3].replace('$', '')))
         elif words[0] == 'Charge':
             self.charge(self.users[words[1]], int(words[2].replace('$', '')))
-        elif words[0] == 'Credit': 
+        elif words[0] == 'Credit':
             self.credit(self.users[words[1]], int(words[2].replace('$', '')))

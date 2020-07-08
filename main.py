@@ -3,6 +3,7 @@ import sys
 from ccp.credit_card_processor import Ccp
 from ccp.user import User
 
+
 def main():
     ccp = Ccp()
     if len(sys.argv) > 1:
@@ -16,12 +17,13 @@ def main():
                     ccp.process(command)
                 ccp.print()
             except IOError as e:
-                return e
-            
+                return str(e)
+
     else:
         for command in sys.stdin:
             ccp.process(command)
         ccp.print()
+
 
 if __name__ == '__main__':
     main()
