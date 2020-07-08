@@ -2,9 +2,10 @@
 
 ---
 
-Imagine that you're writing software for a credit card provider. Implement a
-program that will add new credit card accounts, process charges and credits
-against them, and display summary information.
+This program contains a basic credit card provider. It can 
+add new credit card accounts, process charges and credits
+against them, and displays summary information after completion.
+
 
 ## Design decisions
 
@@ -26,6 +27,12 @@ Keep it simple!
     - Card numbers should be validated using Luhn 10
 
 ## Requirements
+
+`pip install pytest`
+
+`pip install pyinstaller`
+
+`pyinstaller --onefile main.py`
 
 #### Dependencies
 
