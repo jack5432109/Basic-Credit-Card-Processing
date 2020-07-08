@@ -18,45 +18,20 @@ Python helps me focus on the program requirements, by having me deal with lesser
 
 ## Requirements
 
+- [python](https://www.python.org/) >=3
+- [pip](https://pip.pypa.io/en/stable/)
+- [pytest](https://docs.pytest.org/en/stable/)
+- [pyinstaller](https://www.pyinstaller.org/)
+
+## Usage
+
+- `$ pytest`
+  - runs tests
+- `
+
 `pip install pytest`
-
 `pip install pyinstaller`
-
 `pyinstaller --onefile main.py`
-
-- Your program must accept input from two sources: a filename passed in
-  command line arguments and STDIN. For example, on Linux or macOS both
-  `./myprogram input.txt` and `./myprogram < input.txt` should work. STDIN should read the
-  whole input file, which may contain multiple lines.
-- Your program must accept the following three input commands passed with space delimited
-  arguments:
-  - "Add" will create a new credit card for a given name, card number, and limit
-    - Card numbers should be validated using Luhn 10
-
-
-#### Dependencies
-
-- [gnu make](https://www.gnu.org/software/make/) >=3.81
-
-* more details at [core_api readme](https://github.com/QuicketSolutions/core_api)
-* [Project Requirements](https://github.com/jack5432109/Basic-Credit-Card-Processing/wiki/Project-Requirements)
-* All input will be valid. For example, you don't need to check for or gracefully handle:
-  - Illegal characters
-  - Malformed commands
-  - Capitalization changes
-* All input will be space delimited.
-* Credit card numbers may vary in length up to 19 characters.
-* Credit card numbers will always be numeric.
-* Amounts will always be prefixed with "\$" and will be in whole dollars (no
-  decimals).
-
-## Input and Output:
-
-```
-Lisa: $-93
-Quincy: error
-Tom: $500
-```
 
 ## Implementing and Packaging Your Solution:
 
