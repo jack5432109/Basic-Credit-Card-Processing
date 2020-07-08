@@ -7,16 +7,22 @@ This program contains code for a basic credit card provider. It can add new cred
 
 ## Design decisions
 
-The design decisions I made resemble Facade Design pattern. I created three classes in their individual files: 
+The design decisions I made resemble Facade Design pattern. I created three files each containing a class: 
 - `main.py`: main class that runs the program, reads input and forwards the command to credit card processor 
 - `user.py`: records User information
 - `credit_card_processor.py`: the Credit Card Processor, that processes the commands and manipulates user information. 
 
-- going to throw any "gotchas" at you or your submission,
-- testing for your ability to suss out edge cases, or
-- trying to trick you.
-
 ## Why python
+
+Python helps me focus on the program requirements, by having me deal with lesser idiosyncracies that comes with any programming language. In my opinion, I am able to achieve more in fewer steps or lines of code than many other programming languages.
+
+## Requirements
+
+`pip install pytest`
+
+`pip install pyinstaller`
+
+`pyinstaller --onefile main.py`
 
 - Your program must accept input from two sources: a filename passed in
   command line arguments and STDIN. For example, on Linux or macOS both
@@ -27,13 +33,6 @@ The design decisions I made resemble Facade Design pattern. I created three clas
   - "Add" will create a new credit card for a given name, card number, and limit
     - Card numbers should be validated using Luhn 10
 
-## Requirements
-
-`pip install pytest`
-
-`pip install pyinstaller`
-
-`pyinstaller --onefile main.py`
 
 #### Dependencies
 
