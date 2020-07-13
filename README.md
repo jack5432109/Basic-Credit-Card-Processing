@@ -9,8 +9,8 @@ This program contains code for a basic credit card provider. It can add new cred
 
 The design decisions I made resemble Facade Design pattern. I created three files each containing a class: 
 - `main.py`: main class that runs the program, reads input and forwards the command to credit card processor 
-- `user.py`: records User information
-- `credit_card_processor.py`: the Credit Card Processor, that processes the commands and manipulates user information. 
+- `credit_card_processor.py`: the Credit Card Processor, that processes the commands and manipulates user information 
+- `user.py`: records User information 
 
 ## Why python
 
